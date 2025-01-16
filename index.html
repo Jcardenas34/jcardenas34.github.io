@@ -32,8 +32,34 @@
         nav a:hover {
             text-decoration: underline;
         }
+        .banner {
+            position: relative;
+            background: url('taptalks_1.jpg') no-repeat center center;
+            background-size: cover;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+        .banner h1 {
+            margin: -1.0;
+            font-size: 3rem;
+        }
         main {
             padding: 2rem;
+        }
+        .video-section {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .video-section img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
         }
         footer {
             background-color: #333;
@@ -53,6 +79,14 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
+    <div class="banner">
+        <img src="taptalks_1.jpg" alt="Banner Image" style="width: 100%; height: 300px; object-fit: cover;">
+        <h1 style="position: absolute; color: white; text-shadow: 2px 2px 4px rgba(0,0,0,0.7);"> </h1>
+        <!-- <h1> -->
+            <!-- <p>UTA TapTalks</p>  -->
+            <!-- <p>Neural Networks: The Age of Machines</p> -->
+        <!-- </h1> -->
+    </div>
 
     <main>
         <section id="about">
@@ -62,11 +96,27 @@
 
         <section id="services">
             <h2>Services</h2>
-            <p>Here, you can list the services you offer or your expertise.</p>
+            <p>Here is a link to my <a href="https://github.com/Jcardenas34">personal projects</a>! on Github, but below is a summary of my professional skills and expertise I can offer you or your company.</p>
             <p>TensorFlow, Keras, Linux, VSCode, Mac, Windows, Numpy, Git, GitLab,
             HTCondor, SLURM, ROOT, PyROOT, Matplotlib, Pandas, Conda, Jupyter Notebook </p>
             <p>Strong Backgrounds: Calculus, Linear Algebra, Communication, Public Speaking, Statistical Analysis, Particle Physics, Data Visualization, Programming, Machine Learning, Data Pipeline Development, Binary Classification, Problem Solving, Critical Thinking, Writing clear and concise scientific documentation</p>          
         </section>
+
+        <section id="video">
+            <h2>Check out this simulation of Liquid Argon Imade using VisualPython!</h2>
+            <div class="video-section">
+                <video autoplay muted controls width="600">
+                <source src="LAr_simulation.mp4" type="video/mp4">
+                <source src="LAr_simulation~.mov" type="video/quicktime">
+                Your browser does not support the video tag.
+                </video>
+                <img src="taptalks_2.jpg" alt="H+->\tau\nu limits Run2">
+            </div>
+            <div class="link">
+                <a href="charged_higgs_limits.html">So, What are we looking at here?</a>
+            </div>
+        </section>
+
         <section id="code-snippet">
             <h2>Code Snippet</h2>
             <pre>
